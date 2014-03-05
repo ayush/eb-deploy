@@ -82,7 +82,7 @@ done
 
 # ensure required params have been passed
 if [ -z $APP_WAR ]; then
-	echo 'aborting: -w or $APP_WAR not set. It should point to the war file location relative to $DEPLOY_DIR below and be the form ../target/scala-2.10/app_2.10-0.1'
+	echo 'aborting: -w or $APP_WAR not set. It should point to the war file location relative to $DEPLOY_DIR below and be the form ./target/scala-2.10/app_2.10-0.1'
 	usage
 	exit 1
 fi
