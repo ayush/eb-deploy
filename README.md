@@ -17,7 +17,10 @@ Each one of them can be passed either as options to the command line or be prese
 
 
 ```
-  eb-deploy options
+eb-deploy options
+  
+Deploy a war file to AWS Elastic Beanstalk. You can pass params as options or 
+have them be present as environment variables mentioned under the name specified for that option.
   
    -w      $APP_WAR                    | war file location of the form /var/app/target/scala-2.10/app_2.10-0.1
    -v      $CI_BUILD_NUMBER            | used to create full war file : $APP_WAR.$CI_BUILD_NUMBER.war
