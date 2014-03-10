@@ -36,4 +36,4 @@ have them be present as environment variables mentioned under the name specified
 if the war file is at /var/app/target/scala-2.10/app_2.10-0.1.213.war then "WAR file location" should be /var/app/target/scala-2.10/app_2.10-0.1 and "build number" should be 213. eb-deploy will then combine the two and suffix it with .war to create the far file name. This is a bit clunky and should be improved :(
 
 ### Got something other than a war file?
-Although eb-deploy deploys war files, it can be adapted to deploy any other kind of archive. If there is interest, file a issue and I'll get to it. Or better still, the code should be pretty readable, improve it and send in a pull request.
+Although eb-deploy deploys war files, it can be adapted to deploy any other kind of archive. If there is interest, file an issue and I'll get to it. Or better still, the code should be pretty readable, improve it and send in a pull request.
