@@ -141,7 +141,7 @@ command -v unzip >/dev/null 2>&1 || { echo >&2 "aborting: need unzip, please ins
 command -v git >/dev/null 2>&1 || { echo >&2 "aborting: need git, please install it first."; exit 1; }
 
 # install boto (required by AWS CLI)
-pip install -r boto
+pip install boto
 
 # Ensure war file exists
 WAR=$APP_WAR.$CI_BUILD_NUMBER.war
