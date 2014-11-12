@@ -132,13 +132,16 @@ if [ -z $APP_EB_Region ]; then
     APP_EB_Region="us-east-1"
 fi
 if [ -z $APP_EB_CLI_VERSION ]; then
-    APP_EB_CLI_VERSION="2.6.0"
+    APP_EB_CLI_VERSION="2.6.4"
 fi
 
 # ensure required tools exists
 command -v wget >/dev/null 2>&1 || { echo >&2 "aborting: need wget, please install it first."; exit 1; }
 command -v unzip >/dev/null 2>&1 || { echo >&2 "aborting: need unzip, please install it first."; exit 1; }
 command -v git >/dev/null 2>&1 || { echo >&2 "aborting: need git, please install it first."; exit 1; }
+
+# install boto (required by AWS CLI)
+pip install -r boto
 
 # Ensure war file exists
 WAR=$APP_WAR.$CI_BUILD_NUMBER.war
