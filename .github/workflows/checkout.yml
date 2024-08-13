@@ -21,7 +21,7 @@ jobs:
       pull-requests: write # It is required for posting Pull Request comment.
       contents: read       # It is required for checking out the code in GitHub Action.
     container:
-      image: codetyio/codety:0.002
+      image: codetyio/codety:latest
     steps:
       - run: ls
         env:
